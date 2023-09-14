@@ -1,6 +1,4 @@
-
 import { NavLink } from "react-router-dom"
-import ShowPortfolios from "../components/ShowPortfolios";
 
 const Home = () => {
   return (
