@@ -1,12 +1,17 @@
 import { NavLink } from "react-router-dom"
+import DeleteButton from "../components/atoms/DeleteButton";
+import EditButton from "../components/atoms/EditButton";
+import GeneralButton from "../components/atoms/GeneralButton";
 
 const Home = () => {
   return (
     <div>
       <header>
         <h1>Aida Herraiz</h1>
-        <NavLink to ="/myprojects ">
-            <button>Mis proyectos</button></NavLink></header>
+        <DeleteButton />
+        <EditButton />
+        <GeneralButton />
+      </header>
     </div>
   )
 }

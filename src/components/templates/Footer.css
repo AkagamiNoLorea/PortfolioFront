@@ -1,14 +1,15 @@
 .footer {
     padding: 20px 0;
-    background-color: lightgray;
-    opacity: .6;
+    background-color: #DEDEDE;
+    border-radius: 0.25em;
+    box-shadow: 0 -0.5em .7em rgba(0,0,0,0.3);
     width: 100%;
     position: absolute;
     bottom: 0;
 }
 
 .social-items {
-    color: #F27507;
+    color: #F24607;
     text-align: center;
 }
 
@@ -42,7 +43,7 @@
 
 .list a {
     opacity: 0.8;
-    color: #F27507;
+    color: #F24607;
     text-decoration: none;
 }
 
@@ -60,14 +61,4 @@
     margin-top: 15px;
     text-align: center;
     color: rgb(181, 175, 175);
-}
-
-
-
-
-footer .fa-brands{
-    color: #F27507;
-}
-footer .fa-regular{
-    color: #F27507;
 }
