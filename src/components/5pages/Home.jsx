@@ -1,13 +1,11 @@
 import { NavLink } from "react-router-dom"
+import Presentation from "../3organisms/Presentation";
 
 
 const Home = () => {
   return (
     <>
-      <div class="grid">
-        <div class="left"></div>
-        <div class="right"></div>
-      </div>
+      <Presentation />
     </>
   )
 }

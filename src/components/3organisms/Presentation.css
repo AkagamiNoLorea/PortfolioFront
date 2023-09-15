@@ -1,0 +1,16 @@
+.grid {
+    height: 100vh;
+    transition: 500ms;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+  }
+  :where(.left, .right) {
+    transition: 300ms;
+  }
+  .grid:has(.left:hover) {
+    grid-template-columns: 1.5fr 0.5fr;
+  }
+  .grid:has(.right:hover) {
+    grid-template-columns: 0.5fr 1.5fr;
+  }
