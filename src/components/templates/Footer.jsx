@@ -15,10 +15,10 @@ const footer = () => {
                         <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                        <a href="#">Sobre mi</a>
+                        <NavLink to="/aboutme">Sobre mi</NavLink>
                     </li>
                     <li>
-                        <a href="#">Habilidades y Tecnologias</a>
+                        <NavLink to="/skills">Habilidades y Tecnologias</NavLink>
                     </li>
                     <li>
                         <NavLink to="/myprojects">Mis proyectos</NavLink>
@@ -27,7 +27,7 @@ const footer = () => {
                         <NavLink to="/contact">Contacto</NavLink>
                     </li>
                 </ul>
-                <p class="copyright"> @AkagamiNoLorea</p>
+                <p class="copyright"> @AkagamiNoLorea 2023{'\n'} </p>
             </footer>
         </>
     )
