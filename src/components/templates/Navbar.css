@@ -1,24 +1,19 @@
-.invisible {
-    left: -999px;
-    overflow: hidden;
-    position: absolute;
-    top: -999px;
-}
-.invisible:hover {
-    left: -999px;
-    overflow: visible;
-    position: absolute;
-    top: -999px;
+
+nav{
+    width: 100%;
 }
 .navigation{
-    background-color: #f0f6ff;
+    background-color: #DEDEDE;
     border-radius: 0.25em;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 .navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: flex-end;
+    width: 100%;
 }
 .navigation a{
     display: block;
@@ -45,4 +40,9 @@
 }
 .navigation--inline ul {
     display: flex;
+}
+@media screen and (max-width: 600px) {
+    .invisible{
+        display:none;
+    }
 }

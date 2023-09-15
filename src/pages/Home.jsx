@@ -5,8 +5,7 @@ const Home = () => {
     <div>
       <header>
         <h1>Aida Herraiz</h1>
-        <NavLink to ="/myprojects ">
-            <button>Mis proyectos</button></NavLink></header>
+      </header>
     </div>
   )
 }
