@@ -3,14 +3,52 @@
     transition: 500ms;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3px;
-  }
-  :where(.left, .right) {
-    transition: 300ms;
-  }
-  .grid:has(.left:hover) {
-    grid-template-columns: 1.5fr 0.5fr;
-  }
-  .grid:has(.right:hover) {
-    grid-template-columns: 0.5fr 1.5fr;
-  }
+    background: crimson;
+}
+
+.left,
+.right {
+    position: relative;
+    overflow: hidden;
+}
+
+.left h1,
+.right h1 {
+    font-size: 3rem;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.left img,
+.right img {
+    width: 50%;
+    /* Asegura que la imagen ocupa todo el espacio disponible */
+    transition: transform 0.3s ease;
+}
+
+.left img {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right img {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.grid .left.hovered {
+    grid-template-columns: 1.8fr 0.2fr;
+}
+
+.grid .right.hovered {
+    grid-template-columns: 0.2fr 1.8fr;
+}
+
+.presentingMe img {
+    width: 25%;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    border: 2px solid red;
+}
