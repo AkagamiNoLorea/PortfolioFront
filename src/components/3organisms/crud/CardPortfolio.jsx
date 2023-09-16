@@ -17,7 +17,7 @@ export default function CardPortfolio(props) {
                     </div>
                     <div class="card-lenguajes">
                             <p>{portfolio.lenguaje}</p>
-                            <div class="value">32</div>
+                            <div class="lenguaje">32</div>
                             <div class="type">comments</div>
                     </div>
                     <div class="card-urls">

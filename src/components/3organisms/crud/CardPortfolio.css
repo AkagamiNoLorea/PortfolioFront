@@ -36,10 +36,13 @@
     grid-area: image;
     background: teal;
     background-size: cover;
+    margin: 0 2% 1%;
 }
 
 .card-lenguajes {
     grid-area: lenguajes;
+    align-items: center;
+    margin: 0 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -60,6 +63,7 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 30px;
+    margin-top: 1%;
 }
 .card-buttons{
     grid-area: buttons;
