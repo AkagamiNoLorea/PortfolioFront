@@ -50,8 +50,8 @@ const DeletePortfolio = () => {
         </div>
         <h3>¿Estás seguro de que quieres eliminar este proyecto?</h3>
         <div className='form2Buttons'>
-          <button className='formButton' onClick={handleDeletePortfolio}>Eliminar</button>
-          <button className='formButton' type="button" onClick={goBack}>Cancelar</button>
+          <button className='formButton' onClick={handleDeletePortfolio}><i class="fa-solid fa-check"></i> Eliminar</button>
+          <button className='formButton' type="button" onClick={goBack}><i class="fa-solid fa-xmark"></i>Cancelar</button>
         </div>
     </form>
     </>

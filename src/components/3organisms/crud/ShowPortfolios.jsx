@@ -40,7 +40,7 @@ const ShowPortfolios = () => {
     return (
         <>
             <div className="createButton">
-                <button className="formButton" onClick={() => navigate("/create")}>Crear Proyecto</button>
+                <button className="formButton" onClick={() => navigate("/create")}><i class="fa-solid fa-plus"></i> Crear Proyecto</button>
             </div>
             <div className="box">
                 {

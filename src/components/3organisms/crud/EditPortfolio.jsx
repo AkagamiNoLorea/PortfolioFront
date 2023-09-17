@@ -92,8 +92,8 @@ const EditPortfolio = () => {
             <input placeholder="Ingrese url" type="text" value={portfolio.despliegue || ''} onChange={handleInputChange} />
           </div>
           <div className='form2Buttons'>
-            <button className='formButton' type="submit">Guardar canvios</button>
-            <button className='formButton' type="button" onClick={goBack}>Cancelar</button>
+            <button className='formButton' type="submit"><i class="fa-regular fa-floppy-disk"></i> Guardar canvios</button>
+            <button className='formButton' type="button" onClick={goBack}><i class="fa-solid fa-xmark"></i> Cancelar</button>
           </div>
         </div>
       </form >

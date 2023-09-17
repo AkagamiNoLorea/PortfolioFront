@@ -30,8 +30,8 @@ export default function CardPortfolio(props) {
                         <p>Despliegue: {portfolio.despliegue}</p>
                     </div>
                     <div className="card-buttons">
-                        <button onClick={() => props.editPortfolio(portfolio)}> Editar </button>
-                        <button onClick={() => props.deletePortfolio(portfolio)}> Eliminar </button>
+                        <button onClick={() => props.editPortfolio(portfolio)}><i class="fa-solid fa-pen"></i> Editar </button>
+                        <button onClick={() => props.deletePortfolio(portfolio)}><i class="fa-solid fa-xmark"></i> Eliminar </button>
                     </div>
                 </div>
             </div>

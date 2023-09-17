@@ -75,7 +75,7 @@ const SavePortfolio = () => {
                     </div>
                     <div className='form2Buttons'>
                         <button className='formButton' type="submit">Guardar proyecto</button>
-                        <button className='formButton' type="button" onClick={goBack}>Cancelar</button>
+                        <button className='formButton' type="button" onClick={goBack}><i class="fa-solid fa-xmark"></i>Cancelar</button>
                     </div>
                 </div >
             </form >
