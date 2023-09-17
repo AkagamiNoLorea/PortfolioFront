@@ -39,8 +39,8 @@ const ShowPortfolios = () => {
 
     return (
         <>
-            <div>
-                <button onClick={() => navigate("/create")}>Crear Proyecto</button>
+            <div className="createButton">
+                <button className="formButton" onClick={() => navigate("/create")}>Crear Proyecto</button>
             </div>
             <div className="box">
                 {

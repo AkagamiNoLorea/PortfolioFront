@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import './FormsPortfolio.css'
 
 const url = "http://localhost:8080/api/portfolio";
 
@@ -9,7 +10,7 @@ const EditPortfolio = () => {
   const [portfolio, setPortfolio] = useState({});
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  const { portfolioId } = useParams(); 
+  const { portfolioId } = useParams();
 
   useEffect(() => {
     const fetchPortfolio = async () => {
@@ -47,76 +48,56 @@ const EditPortfolio = () => {
   }
 
   return (
-    <div>
-      <div className="form">
-      <h2>Editar Proyecto</h2>
+    <>
       <form onSubmit={handleEditPortfolio}>
-        <div>
-          <label htmlFor="nombre">Nombre:</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            value={portfolio.nombre || ''}
-            onChange={handleInputChange}
-          />
+        <div className="applicationForm">
+          <h1>Modificar un proyecto</h1>
         </div>
-        <div>
-          <label htmlFor="descripcion">Descripción:</label>
-          <input
-            type="text"
-            id="descripcion"
-            name="descripcion"
-            value={portfolio.descripcion || ''}
-            onChange={handleInputChange}
-          />
+        <div className="formTable">
+          <div>
+            <label>Nombre</label>
+            <input placeholder="Ingrese el titulo..." type="text" value={portfolio.nombre || ''} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label>Descripcion</label>
+            <input placeholder="Describe tu proyecto..." type="text" value={portfolio.descripcion || ''} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label>Imagen</label>
+            <input placeholder="Ingrese url de imagen" type="text" value={portfolio.img || ''} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label>Lenguajes</label>
+            <div className='formGrid'>
+              <div className='formGridPart'>
+                <label>HTML</label>
+                <input placeholder="Ingrese solo valor numerico" type="text" value={portfolio.htemlValue || ''} onChange={handleInputChange} />
+                <label>CSS</label>
+                <input placeholder="Ingrese solo valor numerico" type="text" value={portfolio.cssValue || ''} onChange={handleInputChange} />
+              </div>
+              <div className='formGridPart'>
+                <label>Javascript</label>
+                <input placeholder="Ingrese solo valor numerico" type="text" value={portfolio.jsValue || ''} onChange={handleInputChange} />
+                <label>Java</label>
+                <input placeholder="Ingrese solo valor numerico" type="text" value={portfolio.javaValue || ''} onChange={handleInputChange} />
+              </div>
+            </div>
+          </div>
+          <div>
+            <label>Enlace a GitHub</label>
+            <input placeholder="Ingrese url" type="text" value={portfolio.enlace || ''} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label>Despliegue</label>
+            <input placeholder="Ingrese url" type="text" value={portfolio.despliegue || ''} onChange={handleInputChange} />
+          </div>
+          <div className='form2Buttons'>
+            <button className='formButton' type="submit">Guardar canvios</button>
+            <button className='formButton' type="button" onClick={goBack}>Cancelar</button>
+          </div>
         </div>
-        <div>
-          <label htmlFor="img">Imagen:</label>
-          <input
-            type="text"
-            id="img"
-            name="img"
-            value={portfolio.img || ''}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="lenguaje">Lenguajes:</label>
-          <input
-            type="text"
-            id="lenguaje"
-            name="lenguaje"
-            value={portfolio.lenguaje || ''}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="enlace">Enlace:</label>
-          <input
-            type="text"
-            id="enlace"
-            name="enlace"
-            value={portfolio.enlace || ''}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="despliegue">Despliegue:</label>
-          <input
-            type="text"
-            id="despliegue"
-            name="despliegue"
-            value={portfolio.despliegue || ''}
-            onChange={handleInputChange}
-          />
-        </div>
-
-        <button type="submit">Guardar cambios</button>
-        <button type="button" onClick={goBack}>Cancelar</button>
-      </form>
-      </div>
-    </div>
+      </form >
+    </>
   );
 };
 

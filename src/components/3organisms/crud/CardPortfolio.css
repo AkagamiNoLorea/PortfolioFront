@@ -23,14 +23,17 @@
     border-top-right-radius: 15px;
     margin: 2%;
 }
+
 .card-text h2 {
     margin-top: 0px;
     font-size: 50px;
 }
+
 .card-text p {
     font-size: 30px;
     font-weight: 300;
 }
+
 .card-image {
     grid-area: image;
     background: teal;
@@ -64,22 +67,41 @@
     font-size: 30px;
     margin-top: 1%;
 }
-.card-buttons{
+
+.card-buttons {
     grid-area: buttons;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-.card-buttons > button {
-    margin: 1%;
+
+.card-buttons>button {
+    margin: 2%;
     padding: 0.5%;
     border-radius: 10px;
+    width: 25%;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 1%;
+    border-radius: 20px 10px 20px 10px;
+    -webkit-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    font-family: 'Caveat', cursive;
+}
+
+.formButton:hover {
+    background-color: #F27507;
 }
 
 .card-lenguajes {
     grid-area: lenguajes;
     align-items: center;
     margin: 0 2% 0;
-    padding-top:2%;
+    padding-top: 2%;
     flex-wrap: wrap;
     font-size: 30px;
 }
