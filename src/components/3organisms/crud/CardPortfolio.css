@@ -7,8 +7,8 @@
 
 .card-container {
     display: grid;
-    grid-template-rows: 2fr 2fr 1fr 1fr 1fr;
-    grid-template-areas: "text" "image" "lenguajes" "urls" "buttons";
+    grid-template-rows: 2fr 2fr .5fr .5fr 0.5fr;
+    grid-template-areas: "text" "image" "lenguajes" "frameworks" "urls" "buttons";
     border-radius: 18px;
     background: linear-gradient(#fff, #dedede);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -28,26 +28,25 @@
     font-size: 50px;
 }
 .card-text p {
-    color: grey;
     font-size: 30px;
     font-weight: 300;
 }
 .card-image {
     grid-area: image;
     background: teal;
-    background-size: cover;
     margin: 0 2% 1%;
 }
 
-.card-lenguajes {
-    grid-area: lenguajes;
+.card-frameworks {
+    grid-area: frameworks;
     align-items: center;
     margin: 0 2%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background: #591E08;
+    font-size: 30px;
 }
+
 
 .card-lenguajes .lenguaje {
     display: flex;
@@ -70,8 +69,17 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-.card-buttons button {
+.card-buttons > button {
     margin: 1%;
     padding: 0.5%;
     border-radius: 10px;
+}
+
+.card-lenguajes {
+    grid-area: lenguajes;
+    align-items: center;
+    margin: 0 2% 0;
+    padding-top:2%;
+    flex-wrap: wrap;
+    font-size: 30px;
 }
