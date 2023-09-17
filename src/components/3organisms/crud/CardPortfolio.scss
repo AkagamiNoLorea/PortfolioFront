@@ -1,0 +1,82 @@
+@function progress($percent) {
+    $deg: $percent/100 * 180;
+    @return #{$deg}+deg;
+}
+
+.circular-progress {
+    &,
+    &:before,
+    &:after {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    margin: auto;
+    position: relative;
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    &:before {
+        padding: .5em;
+        line-height: 140px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &:after {
+        font-size: .8rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        line-height: 230px;
+    }
+}
+
+@mixin circular-progress($percent, $skill, $color, $bgcolor) {
+
+    $progress: progress($percent);
+    background: linear-gradient(0deg, $color 50%, rgba($color, .3) 50%);
+    transform: rotate($progress);
+
+    &:before,
+    &:after {
+        color: $color;
+    }
+
+    &:before {
+        background: $bgcolor content-box;
+        transform: rotate(-#{$progress});
+        content: "#{$percent}%";
+    }
+
+    &:after {
+        background: linear-gradient(transparent 50%, $bgcolor 50%);
+        content: "#{$skill}";
+        transform: rotate(-#{$progress}) scale(1.1);
+    }
+}
+
+@for $i from 0 through 100 {
+    .hteml-#{$i} {
+        @include circular-progress($i, 'hteml', #F2B705, #111);
+    }
+
+    .css-#{$i} {
+        @include circular-progress($i, 'css', #F29F05, #111);
+    }
+
+    .js-#{$i} {
+        @include circular-progress($i, 'js', #F27507, #111);
+    }
+
+    .java-#{$i} {
+        @include circular-progress($i, 'java', #F24607, #111);
+    }
+}

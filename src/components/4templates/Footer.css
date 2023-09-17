@@ -4,6 +4,8 @@
     border-radius: 0.25em;
     box-shadow: 0 -0.5em .7em rgba(0,0,0,0.3);
     width: 100%;
+    position: relative;
+    bottom: -50px;
 }
 
 .social-items {

@@ -1,11 +1,17 @@
-.grid {
+.grid-presentingMe {
     height: 100vh;
     transition: 500ms;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: crimson;
 }
-
+:where(.left, .right){
+    background: navajowhite;
+    transition: 300ms;
+}
+:where(.left, .right):hover{
+    background-color: crimson;
+}
 .left,
 .right {
     position: relative;
@@ -37,15 +43,15 @@
     transform: translateX(50%);
 }
 
-.grid .left.hovered {
+.grid-presentingMe:has(.left:hover) {
     grid-template-columns: 1.8fr 0.2fr;
 }
 
-.grid .right.hovered {
+.grid-presentingMe:has(.right:hover) {
     grid-template-columns: 0.2fr 1.8fr;
 }
 
-.presentingMe img {
+.gird-presentingMe img {
     width: 25%;
     position: absolute;
     top: 15%;
