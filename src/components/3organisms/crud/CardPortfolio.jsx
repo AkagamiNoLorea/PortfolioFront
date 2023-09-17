@@ -7,7 +7,6 @@ export default function CardPortfolio(props) {
     return (
         <>
             <div className="card">
-
                 <div className="card-container">
                     <div className="card-text">
                         <h2>{portfolio.nombre}</h2>

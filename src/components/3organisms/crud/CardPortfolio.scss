@@ -1,17 +1,9 @@
-.card-lenguajes {
-    margin-top: 2em;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+@function progress($percent) {
+    $deg: $percent/100 * 180;
+    @return #{$deg}+deg;
 }
 
 .circular-progress {
-
     &,
     &:before,
     &:after {
@@ -45,11 +37,6 @@
         text-transform: uppercase;
         line-height: 230px;
     }
-}
-
-@function progress($percent) {
-    $deg: $percent/100 * 180;
-    @return #{$deg}+deg;
 }
 
 @mixin circular-progress($percent, $skill, $color, $bgcolor) {

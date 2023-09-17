@@ -100,8 +100,16 @@
 .card-lenguajes {
     grid-area: lenguajes;
     align-items: center;
-    margin: 0 2% 0;
     padding-top: 2%;
     flex-wrap: wrap;
     font-size: 30px;
+    margin-top: 2em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }

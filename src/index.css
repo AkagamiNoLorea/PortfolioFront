@@ -3,5 +3,6 @@
 }
 body{
     font-family: 'Caveat', cursive;
-    
+    background:fixed url(./assets/background.jpg) ;
+    background-size: cover;
 }

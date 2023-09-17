@@ -1,0 +1,92 @@
+.contact{
+    text-align: center;
+}
+.contact h1{
+    font-size: 3em;
+    padding: 2%;
+}
+.gridContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.gridContact p{
+    padding: 18%;
+    font-size: 30px;
+}
+.contactList {
+    width: 50%;
+    transition: all 0.3s linear;
+    margin: 15% 10%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    left:50%;
+
+}
+
+.contactList li {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transition: all 0.5s linear;
+
+}
+
+.contactList li a {
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 25%;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    transition: all 0.5s linear;
+    text-decoration: none;
+}
+
+.contactList li:nth-child(1) a {
+    background: #F2B705;
+}
+
+.contactList li:nth-child(2) a {
+    background: #F27507;
+}
+
+.contactList li:nth-child(3) a {
+    background: #591E08;
+}
+
+.contactList li:nth-child(4) a {
+    background: #F29F05;
+}
+
+.contactList li:nth-child(5) a {
+    background: #F24607;
+}
+
+.contactList li a i {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    font-size: 27px;
+}
+
+.contactList li a span {
+    display: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contactList li:hover{
+    width:30%
+}
+.contactList a:hover {
+    z-index: 1;
+    width: 200px;
+}
+
+.contactList li:hover a span {
+    padding-left: 30%;
+    display: block;
+}
