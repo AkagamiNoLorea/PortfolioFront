@@ -6,3 +6,6 @@ body{
     background:fixed url(./assets/background.jpg) ;
     background-size: cover;
 }
+.bottom-position{
+    bottom: 0;
+}

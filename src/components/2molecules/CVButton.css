@@ -1,0 +1,28 @@
+.download-button {
+    & a {
+        color: #591E08;
+        text-decoration: none;
+    }
+    display: none;
+    position: absolute;
+    top:45%;
+    left: 20%;
+    width: 350px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #F29F05;
+    color: #591E08;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 20px 10px 20px 10px;
+    /* SOMBRA BOTON: darle sommbre al boton "resgistrarse"*/
+    -webkit-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    font-family: 'Caveat', cursive;
+}
+
+.download-button:hover {
+    background-color: #F27507;
+}

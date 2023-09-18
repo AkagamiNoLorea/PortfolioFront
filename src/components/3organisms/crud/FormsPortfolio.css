@@ -94,3 +94,12 @@ form h3{
 .createButton{
     width: 30%;
 }
+.savePortfolioForm {
+    height: 100vh;
+}
+.savePortfolioForm form {
+    margin: 4% 0 0 0 ;
+}
+.deletePortfolioForm {
+    height: 72vh;
+}

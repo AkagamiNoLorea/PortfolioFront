@@ -4,8 +4,9 @@
     border-radius: 0.25em;
     box-shadow: 0 -0.5em .7em rgba(0,0,0,0.3);
     width: 100%;
-    position: relative;
-    bottom: -50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .social-items {

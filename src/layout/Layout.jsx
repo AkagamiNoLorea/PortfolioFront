@@ -9,7 +9,8 @@ const Layout = () => {
             <main>
                 <Outlet />
             </main>
-            <Footer/>
+            <div className="bottom-position"><Footer/></div>
+            
             {/*<Footer/>*/}
         </div>
     )

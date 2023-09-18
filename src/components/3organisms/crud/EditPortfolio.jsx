@@ -48,7 +48,7 @@ const EditPortfolio = () => {
   }
 
   return (
-    <>
+    <div className="savePortfolioForm">
       <form onSubmit={handleEditPortfolio}>
         <div className="applicationForm">
           <h1>Modificar un proyecto</h1>
@@ -82,6 +82,10 @@ const EditPortfolio = () => {
                 <input placeholder="Ingrese solo valor numerico" type="text" value={portfolio.javaValue || ''} onChange={handleInputChange} />
               </div>
             </div>
+            <div>
+              <label>Frameworks y librerias</label>
+              <input placeholder="Describe tu proyecto..." type="text" value={portfolio.frameworksAndLibraries || ''} onChange={handleInputChange} />
+            </div>
           </div>
           <div>
             <label>Enlace a GitHub</label>
@@ -92,12 +96,12 @@ const EditPortfolio = () => {
             <input placeholder="Ingrese url" type="text" value={portfolio.despliegue || ''} onChange={handleInputChange} />
           </div>
           <div className='form2Buttons'>
-            <button className='formButton' type="submit"><i class="fa-regular fa-floppy-disk"></i> Guardar canvios</button>
-            <button className='formButton' type="button" onClick={goBack}><i class="fa-solid fa-xmark"></i> Cancelar</button>
+            <button className='formButton' type="submit"><i className="fa-regular fa-floppy-disk"></i> Guardar canvios</button>
+            <button className='formButton' type="button" onClick={goBack}><i className="fa-solid fa-xmark"></i> Cancelar</button>
           </div>
         </div>
       </form >
-    </>
+    </div>
   );
 };
 

@@ -14,6 +14,7 @@ const SavePortfolio = () => {
     const [cssValue, setCssValue] = useState('')
     const [jsValue, setJsValue] = useState('')
     const [javaValue, setJavaValue] = useState('')
+    const [frameworksAndLibraries, setFrameworksAndLibraries] = useState('')
     const [enlace, setEnlace] = useState('')
     const [despliegue, setDespliegue] = useState('')
 
@@ -24,13 +25,14 @@ const SavePortfolio = () => {
     }
     const store = async (e) => {
         e.preventDefault()
-        console.log(e)
-        await axios.post(url, { nombre: nombre, descripcion: descripcion, img: img, lenguaje: lenguaje, enlace: enlace, despliegue: despliegue })
+        {/*console.log(e)*/}
+        await axios.post(url, { nombre: nombre, descripcion: descripcion, img: img, 
+            htemlValue: htemlValue, cssValue: cssValue, jsValue: jsValue, javaValue: javaValue, frameworksAndLibraries:frameworksAndLibraries, enlace: enlace, despliegue: despliegue  })
         navigate("/")
     }
 
     return (
-        <>
+        <div className="savePortfolioForm">
             <form onSubmit={store}>
                 <div className="applicationForm">
                     <h1>Subir un proyecto</h1>
@@ -64,6 +66,10 @@ const SavePortfolio = () => {
                                 <input placeholder="Ingrese solo valor numerico" type="text" value={javaValue} onChange={(e) => setJavaValue(e.target.value)} />
                             </div>
                         </div>
+                        <div>
+                        <label>Frameworks y librerias</label>
+                        <input placeholder="Describe tu proyecto..." type="text" value={frameworksAndLibraries} onChange={(e) => setFrameworksAndLibraries(e.target.value)} />
+                        </div>
                     </div>
                     <div>
                         <label>Enlace a GitHub</label>
@@ -74,12 +80,12 @@ const SavePortfolio = () => {
                         <input placeholder="Ingrese url" type="text" value={despliegue} onChange={(e) => setDespliegue(e.target.value)} />
                     </div>
                     <div className='form2Buttons'>
-                        <button className='formButton' type="submit">Guardar proyecto</button>
-                        <button className='formButton' type="button" onClick={goBack}><i class="fa-solid fa-xmark"></i>Cancelar</button>
+                        <button className='formButton' type="submit"><i className="fa-regular fa-floppy-disk"></i>Guardar proyecto</button>
+                        <button className='formButton' type="button" onClick={goBack}><i className="fa-solid fa-xmark"></i>Cancelar</button>
                     </div>
                 </div >
             </form >
-        </>
+        </div>
 
     )
 }

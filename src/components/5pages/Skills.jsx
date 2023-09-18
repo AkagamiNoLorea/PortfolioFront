@@ -1,10 +1,17 @@
 import React from 'react'
 import graphicsoft from '../../assets/graphicsoft.png'
 import graphichard from '../../assets/graphichard.png'
+import './Skills.css'
+import CVButton from '../2molecules/CVButton'
 const Skills = () => {
   return (
     <>
+    
       <div className='soft-skills'>
+        <button className='cvButton'>
+                        <a href='src\assets\CurriculumAidaHerraiz.pdf' download>
+                          <span className="button-invisible">Descarga mi curriculum{'\n'}</span>
+                          <i className="fa-solid fa-exclamation"></i></a></button>
         <div>
           <h2>Dando lo Mejor de Mí: Un Desarrollador Único</h2>
           <p>
@@ -16,21 +23,20 @@ const Skills = () => {
           <p>
             Entiendo que cada uno de nosotros tiene su propio estilo de trabajo y enfoque, y es esta diversidad lo que enriquece nuestros equipos y proyectos. Estoy emocionado de compartir mis soft skills, que complementan mi dedicación, para colaborar y crear experiencias web inolvidables.
           </p>
+          <div className='img-graphicsoft'>
+            <img className="graphicsoft" src={graphicsoft} alt="grafico soft skills" />
+          </div>
         </div>
       </div>
-      <div className='img-graphicsoft'>
-          <img className="graphicsoft" src={graphicsoft} alt="grafico soft skills" />
-        </div>
       <div className='hard-skills'>
         <h2>Competencias Técnicas</h2>
         <p>Poseo habilidades integrales como desarrollador Fullstack, con un conocimiento sólido tanto en Front-end como Back-end. <br />
           Sin embargo, he encontrado una inclinación natural y una destreza particular en el ámbito del Front-end, donde encuentro una mayor realización y fluidez en mi trabajo.
         </p>
+        <div className='img-graphichard'>
+          <div>Front-End</div><div>Fullstack<br/>Developer</div><div>Back-End</div>
+        </div>
       </div>
-      <div className='img-graphichard'>
-        <img className="graphichard" src={graphichard} alt="grafico hard skills" />
-      </div>
-
     </>
   )
 }

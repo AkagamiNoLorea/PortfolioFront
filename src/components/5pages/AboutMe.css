@@ -2,6 +2,10 @@
     height: 30vh;
     font-size: 150px;
     text-align: center;
+    width: 50%;
+    margin: auto;
+    transform: rotate(-15deg);
+    padding-top: 3%;
 }
 
 .grid-aboutme {

@@ -1,0 +1,78 @@
+.soft-skills{
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, .8);
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:2% 4%;
+}
+.soft-skills img{
+    width: 85%;
+    margin-left: 7.5%;
+}
+.soft-skills h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 2%;
+    color: #F24607;
+}
+.hard-skills{
+    font-size: 30px;
+    box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:4%;
+}
+.img-graphichard{
+    background: url('src/assets/graphichard.png') no-repeat center;
+    height:65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 80px;
+}
+.hard-skills h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 3%;
+    color: #F24607;
+}
+.hard-skills p{
+    padding: 0 10%;
+}
+.cvButton {
+    & a {
+        color: #591E08;
+        text-decoration: none;
+    };
+    width: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #F29F05;
+    color: #591E08;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 20px 10px 20px 10px;
+    /* SOMBRA BOTON: darle sommbre al boton "resgistrarse"*/
+    -webkit-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    font-family: 'Caveat', cursive;
+}
+.cvButton:hover {
+    background-color: #F27507;
+}
+.button-invisible{
+display: none;
+}
+.cvButton:hover{
+    & .button-invisible{
+    display:contents;
+    }
+    width: 350px;
+}

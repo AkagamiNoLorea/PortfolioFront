@@ -43,18 +43,18 @@ const DeletePortfolio = () => {
   }
 
   return (
-    <>
+    <div className="deletePortfolioForm">
       <form>
         <div className="applicationForm">
           <h2>Eliminar el proyecto {portfolio.nombre} </h2>
         </div>
         <h3>¿Estás seguro de que quieres eliminar este proyecto?</h3>
         <div className='form2Buttons'>
-          <button className='formButton' onClick={handleDeletePortfolio}><i class="fa-solid fa-check"></i> Eliminar</button>
-          <button className='formButton' type="button" onClick={goBack}><i class="fa-solid fa-xmark"></i>Cancelar</button>
+          <button className='formButton' onClick={handleDeletePortfolio}><i className="fa-solid fa-check"></i> Eliminar</button>
+          <button className='formButton' type="button" onClick={goBack}><i className="fa-solid fa-xmark"></i>Cancelar</button>
         </div>
     </form>
-    </>
+    </div>
   );
 };
 
