@@ -1,0 +1,115 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+    margin: 2%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-rows: 2fr 2fr .5fr .5fr 0.5fr;
+    grid-template-areas: "text" "image" "lenguajes" "frameworks" "urls" "buttons";
+    border-radius: 18px;
+    background: linear-gradient(#fff, #dedede);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    transition: 0 .5s;
+    margin: 2%;
+}
+
+.card-text {
+    grid-area: text;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 2%;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+.card-text p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.card-image {
+    grid-area: image;
+    background: teal;
+    margin: 0 2% 1%;
+}
+
+.card-frameworks {
+    grid-area: frameworks;
+    align-items: center;
+    margin: 0 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-size: 30px;
+}
+
+
+.card-lenguajes .lenguaje {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+
+.card-urls {
+    grid-area: urls;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 30px;
+    margin-top: 1%;
+}
+
+.card-buttons {
+    grid-area: buttons;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-buttons>button {
+    margin: 2%;
+    padding: 0.5%;
+    border-radius: 10px;
+    width: 25%;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 1%;
+    border-radius: 20px 10px 20px 10px;
+    -webkit-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
+    font-family: 'Caveat', cursive;
+}
+
+.formButton:hover {
+    background-color: #F27507;
+}
+
+.card-lenguajes {
+    grid-area: lenguajes;
+    align-items: center;
+    padding-top: 2%;
+    flex-wrap: wrap;
+    font-size: 30px;
+    margin-top: 2em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}

@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home";
-import SavePortfolio from "../components/crud/SavePortfolio";
-import EditPortfolio from "../components/crud/EditPortfolio";
-import DeletePortfolio from "../components/crud/DeletePortfolio";
-import ShowPortfolios from "../components/crud/ShowPortfolios";
+import Home from "../components/5pages/Home";
+import SavePortfolio from "../components/3organisms/crud/SavePortfolio";
+import EditPortfolio from "../components/3organisms/crud/EditPortfolio";
+import DeletePortfolio from "../components/3organisms/crud/DeletePortfolio";
+import ShowPortfolios from "../components/3organisms/crud/ShowPortfolios";
 import Layout from "../layout/Layout";
-import AboutMe from "../pages/AboutMe";
-import Contact from "../pages/Contact";
-import Skills from "../pages/Skills";
+import AboutMe from "../components/5pages/AboutMe";
+import Contact from "../components/5pages/Contact";
+import Skills from "../components/5pages/Skills";
 
 export const router = createBrowserRouter([
     {

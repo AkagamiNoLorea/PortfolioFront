@@ -1,0 +1,79 @@
+.welcome {
+    height: 30vh;
+    font-size: 150px;
+    text-align: center;
+}
+
+.grid-aboutme {
+    display: grid;
+    grid-template-columns: .3fr 1.7fr;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.aboutme {
+    margin: -1% 3% 1%;
+    padding: 2%;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 30px;
+}
+
+.history {
+    background-color: #F4F4F4;
+    box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.title-history {
+    font-size: 50px;
+    text-align: center;
+    padding: 3%;
+}
+
+.history p {
+    font-size: 30px;
+    padding: 5% 7% 0;
+}
+
+.grid-history {
+    display: grid;
+    grid-template-columns: 1.4fr .6fr;
+    font-size: 30px;
+    text-align: justify;
+    padding: 0 5%;
+}
+
+.title-random {
+    font-size: 50px;
+    text-align: center;
+    padding: 3%;
+    color: #F24607;
+}
+
+.grid-random {
+    display: grid;
+    font-size: 30px;
+    text-align: justify;
+    padding: 0 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-random ul li {
+    list-style: none;
+    line-height: 200%;
+}
+
+.mytatoo {
+    display: flex;
+    justify-content: center;
+}
+
+.imgchocobo {
+    opacity: .8;
+    width: 50%;
+}
+
+.ul1 {
+    text-align: right;
+}
