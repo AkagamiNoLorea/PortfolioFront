@@ -6,7 +6,7 @@ const Contact = () => {
     <section className='contact'>
     <h1 className='titleContact'>¡Hablemos!</h1>
     <div className='gridContact'>
-    <p>Estoy emocionada de escuchar tus ideas y colaborar en proyectos interesantes. Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, no dudes en ponerte en contacto conmigo. Estoy ansiosa por conocerte.</p>
+    <p>Estoy emocionada de escuchar tus ideas y colaborar en proyectos interesantes. Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, no dudes en ponerte en contacto conmigo.</p>
     <ul className='contactList'>
             <li><a href="https://www.linkedin.com/in/aidahc/" target='_blank'><i class="fa-brands fa-linkedin" ></i><span>Linkedin</span></a></li>
             <li><a href="https://github.com/AkagamiNoLorea" target='_blank'><i class="fa-brands fa-github" ></i><span>Github</span></a></li>

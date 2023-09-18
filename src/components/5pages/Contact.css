@@ -10,8 +10,9 @@
     grid-template-columns: 1fr 1fr;
 }
 .gridContact p{
-    padding: 18%;
+    padding: 17% 0% 0% 36%;
     font-size: 30px;
+    text-align: justify;
 }
 .contactList {
     width: 50%;
