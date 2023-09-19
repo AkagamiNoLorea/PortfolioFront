@@ -21,13 +21,14 @@ const SavePortfolio = () => {
     const navigate = useNavigate()
 
     const goBack = () => {
-        navigate("/");
+        navigate("/myprojects");
     }
     const store = async (e) => {
         e.preventDefault()
         {/*console.log(e)*/}
         await axios.post(url, { nombre: nombre, descripcion: descripcion, img: img, 
-            htemlValue: htemlValue, cssValue: cssValue, jsValue: jsValue, javaValue: javaValue, frameworksAndLibraries:frameworksAndLibraries, enlace: enlace, despliegue: despliegue  })
+            htemlValue: htemlValue, cssValue: cssValue, jsValue: jsValue, javaValue: javaValue,
+            frameworksAndLibraries:frameworksAndLibraries, enlace: enlace, despliegue: despliegue  })
         navigate("/")
     }
 

@@ -26,13 +26,13 @@ const DeletePortfolio = () => {
   }, [portfolioId]);
 
   const goBack = () => {
-    navigate("/");
+    navigate("/myprojects");
   };
 
   const handleDeletePortfolio = async () => {
     try {
       await axios.delete(`${url}/${portfolioId}`);
-      navigate('/');
+      navigate('/myprojects');
     } catch (error) {
       setError(error.message);
     }

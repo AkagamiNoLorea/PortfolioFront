@@ -7,7 +7,7 @@
 
 .card-container {
     display: grid;
-    grid-template-rows: 1fr 2fr .5fr .5fr 0.5fr;
+    grid-template-rows: 0.7fr 2fr 0.3fr 0.3fr 0.3fr;
     grid-template-areas: "text" "image" "lenguajes" "frameworks" "urls" "buttons";
     border-radius: 18px;
     background: linear-gradient(#fff, #dedede);
@@ -36,8 +36,10 @@
 
 .card-image {
     grid-area: image;
-    background: teal;
     margin: 0 2% 1%;
+}
+.card-image img{
+    width: 100%;
 }
 
 .card-frameworks {
@@ -100,16 +102,13 @@
 .card-lenguajes {
     grid-area: lenguajes;
     align-items: center;
+    margin: 0 2% 0;
     padding-top: 2%;
-    flex-wrap: wrap;
     font-size: 30px;
     margin-top: 2em;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
