@@ -62,7 +62,7 @@ const EditPortfolio = () => {
       enlace: enlace,
       despliegue: despliegue
     })
-    navigate("/")
+    navigate("/myprojects")
   }
 
   const goBack = () => {
@@ -79,7 +79,7 @@ const EditPortfolio = () => {
         <div className="formTable">
           <div>
             <label>Nombre</label>
-            <input placeholder="Ingrese el titulo..." type="text" value={portfolio.nombre} onChange={(e) => setNombre(e.target.value)}/>
+            <input placeholder="Ingrese el titulo..." type="text" defaultValue={portfolio.nombre} onChange={(e) => setNombre(e.target.value)}/>
           </div>
           <div>
             <label>Descripcion</label>

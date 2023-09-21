@@ -17,7 +17,7 @@
 .contactList {
     width: 50%;
     transition: all 0.3s linear;
-    margin: 15% 10%;
+    margin: 13% 10% 17%;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -54,11 +54,11 @@
 }
 
 .contactList li:nth-child(3) a {
-    background: #591E08;
+    background: #F24607;
 }
 
 .contactList li:nth-child(4) a {
-    background: #F29F05;
+    background: #591E08 ;
 }
 
 .contactList li:nth-child(5) a {
