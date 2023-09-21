@@ -3,7 +3,7 @@ import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import './FormsPortfolio.css'
 
-const url = "http://localhost:8080/api/portfolio"
+const url = "https://portfolioback-production-00e6.up.railway.app/api/portfolio"
 
 const SavePortfolio = () => {
 

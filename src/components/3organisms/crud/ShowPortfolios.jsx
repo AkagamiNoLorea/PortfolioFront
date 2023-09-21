@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import CardPortfolio from "./CardPortfolio"
 
 
-const url = "http://localhost:8080/api/portfolio"
+const url = "https://portfolioback-production-00e6.up.railway.app/api/portfolio"
 const ShowPortfolios = () => {
 
     const [portfolios, setPortfolios] = useState([]);
