@@ -83,7 +83,7 @@ const EditPortfolio = () => {
           </div>
           <div>
             <label>Descripcion</label>
-            <input placeholder="Describe tu proyecto..." type="text" value={portfolio.descripcion} onChange={(e) => setDescripcion(e.target.value)}/>
+            <input placeholder="Describe tu proyecto..." type="text" defaultValue={portfolio.descripcion} onChange={(e) => setDescripcion(e.target.value)}/>
           </div>
           <div>
             <label>Imagen</label>
@@ -94,29 +94,29 @@ const EditPortfolio = () => {
             <div className='formGrid'>
               <div className='formGridPart'>
                 <label>HTML</label>
-                <input placeholder="Ingrese solo valor numerico" type="text" value={portfolio.htemlValue} onChange={(e) => setHtemlValue(e.target.value)} />
+                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.htemlValue} onChange={(e) => setHtemlValue(e.target.value)} />
                 <label>CSS</label>
-                <input placeholder="Ingrese solo valor numerico" type="text" value={portfolio.cssValue} onChange={(e) => setCssValue(e.target.value)} />
+                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.cssValue} onChange={(e) => setCssValue(e.target.value)} />
               </div>
               <div className='formGridPart'>
                 <label>Javascript</label>
-                <input placeholder="Ingrese solo valor numerico" type="text" value={portfolio.jsValue} onChange={(e) => setJsValue(e.target.value)} />
+                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.jsValue} onChange={(e) => setJsValue(e.target.value)} />
                 <label>Java</label>
-                <input placeholder="Ingrese solo valor numerico" type="text" value={portfolio.javaValue} onChange={(e) => setJavaValue(e.target.value)} />
+                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.javaValue} onChange={(e) => setJavaValue(e.target.value)} />
               </div>
             </div>
             <div>
               <label>Frameworks y librerias</label>
-              <input placeholder="Describe tu proyecto..." type="text" value={portfolio.frameworksAndLibraries} onChange={(e) => setFrameworksAndLibraries(e.target.value)} />
+              <input placeholder="Describe tu proyecto..." type="text" defaultValue={portfolio.frameworksAndLibraries} onChange={(e) => setFrameworksAndLibraries(e.target.value)} />
             </div>
           </div>
           <div>
             <label>Enlace a GitHub</label>
-            <input placeholder="Ingrese url" type="text" value={portfolio.enlace} onChange={(e) => setEnlace(e.target.value)}/>
+            <input placeholder="Ingrese url" type="text" defaultValue={portfolio.enlace} onChange={(e) => setEnlace(e.target.value)}/>
           </div>
           <div>
             <label>Despliegue</label>
-            <input placeholder="Ingrese url" type="text" value={portfolio.despliegue} onChange={(e) => setDespliegue(e.target.value)}/>
+            <input placeholder="Ingrese url" type="text" defaultValue={portfolio.despliegue} onChange={(e) => setDespliegue(e.target.value)}/>
           </div>
           <div className='form2Buttons'>
             <button className='formButton' type="submit"><i className="fa-regular fa-floppy-disk"></i> Guardar canvios</button>
