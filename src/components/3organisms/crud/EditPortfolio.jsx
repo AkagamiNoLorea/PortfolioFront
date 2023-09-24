@@ -11,7 +11,7 @@ const EditPortfolio = () => {
   const [nombre, setNombre] = useState('')
   const [descripcion, setDescripcion] = useState('')
   const [img, setImg] = useState('')
-  const [htemlValue, setHtemlValue] = useState('')
+  const [htmlValue, setHtmlValue] = useState('')
   const [cssValue, setCssValue] = useState('')
   const [jsValue, setJsValue] = useState('')
   const [javaValue, setJavaValue] = useState('')
@@ -30,7 +30,7 @@ const EditPortfolio = () => {
         setNombre(response.data.nombre);
         setDescripcion(response.data.descripcion);
         setImg(response.data.img);
-        setHtemlValue(response.data.htemlValue);
+        setHtmlValue(response.data.htmlValue);
         setCssValue(response.data.cssValue);
         setJsValue(response.data.jsValue);
         setJavaValue(response.data.javaValue);
@@ -54,7 +54,7 @@ const EditPortfolio = () => {
       nombre: nombre,
       descripcion: descripcion,
       img: img,
-      htemlValue: htemlValue,
+      htmlValue: htmlValue,
       cssValue: cssValue,
       jsValue: jsValue,
       javaValue: javaValue,
@@ -94,7 +94,7 @@ const EditPortfolio = () => {
             <div className='formGrid'>
               <div className='formGridPart'>
                 <label>HTML</label>
-                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.htemlValue} onChange={(e) => setHtemlValue(e.target.value)} />
+                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.htmlValue} onChange={(e) => setHtmlValue(e.target.value)} />
                 <label>CSS</label>
                 <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.cssValue} onChange={(e) => setCssValue(e.target.value)} />
               </div>

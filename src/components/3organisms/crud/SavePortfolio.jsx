@@ -10,7 +10,7 @@ const SavePortfolio = () => {
     const [nombre, setNombre] = useState('')
     const [img, setImg] = useState('')
     const [descripcion, setDescripcion] = useState('')
-    const [htemlValue, setHtemlValue] = useState('')
+    const [htmlValue, setHtmlValue] = useState('')
     const [cssValue, setCssValue] = useState('')
     const [jsValue, setJsValue] = useState('')
     const [javaValue, setJavaValue] = useState('')
@@ -27,7 +27,7 @@ const SavePortfolio = () => {
         e.preventDefault()
         {/*console.log(e)*/}
         await axios.post(url, { nombre: nombre, descripcion: descripcion, img: img, 
-            htemlValue: htemlValue, cssValue: cssValue, jsValue: jsValue, javaValue: javaValue,
+            htmlValue: htmlValue, cssValue: cssValue, jsValue: jsValue, javaValue: javaValue,
             frameworksAndLibraries:frameworksAndLibraries, enlace: enlace, despliegue: despliegue  })
         navigate("/")
     }
@@ -56,7 +56,7 @@ const SavePortfolio = () => {
                         <div className='formGrid'>
                             <div className='formGridPart'>
                                 <label>HTML</label>
-                                <input placeholder="Ingrese solo valor numerico" type="text" value={htemlValue} onChange={(e) => setHtemlValue(e.target.value)} />
+                                <input placeholder="Ingrese solo valor numerico" type="text" value={htmlValue} onChange={(e) => setHtmlValue(e.target.value)} />
                                 <label>CSS</label>
                                 <input placeholder="Ingrese solo valor numerico" type="text" value={cssValue} onChange={(e) => setCssValue(e.target.value)} />
                             </div>

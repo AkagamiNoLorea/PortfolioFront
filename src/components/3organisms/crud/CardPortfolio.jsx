@@ -16,7 +16,7 @@ export default function CardPortfolio(props) {
                         <img src={portfolio.img} alt="" className="img" />
                     </div>
                     <div className="card-lenguajes">
-                        <p className="circular-progress hteml-{portfolio.htemlValue}">HTML: {portfolio.htemlValue}%</p>
+                        <p className="circular-progress html-{portfolio.htmlValue}">HTML: {portfolio.htmlValue}%</p>
                         <p className="circular-progress css-{portfolio.cssValue}">CSS: {portfolio.cssValue}%</p>
                         <p className="circular-progress js-{portfolio.jsValue}">JS: {portfolio.jsValue}%</p>
                         <p className="circular-progress java-{portfolio.javaValue}">Java: {portfolio.javaValue}%</p>
