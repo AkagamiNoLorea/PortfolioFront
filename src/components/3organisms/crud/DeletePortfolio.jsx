@@ -32,7 +32,7 @@ const DeletePortfolio = () => {
   const handleDeletePortfolio = async () => {
     try {
       await axios.delete(`${url}/${portfolioId}`);
-      navigate('/myprojects');
+      navigate("/myprojects");
     } catch (error) {
       setError(error.message);
     }
