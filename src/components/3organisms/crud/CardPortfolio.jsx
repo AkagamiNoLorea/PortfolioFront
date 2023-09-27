@@ -25,8 +25,8 @@ export default function CardPortfolio(props) {
                         <div>Frameworks y librerias: {portfolio.frameworksAndLibraries}</div>
                     </div>
                     <div className="card-urls">
-                        <p>Enlace a GitHub: <a href={portfolio.enlace} target='_blank'></a></p>
-                        <p>Despliegue: <a href={portfolio.despliegue} target='_blank'></a></p>
+                        <p> <a href={portfolio.enlace} target='_blank'>Enlace a GitHub</a></p>
+                        <p> <a href={portfolio.despliegue} target='_blank'>Despliegue</a></p>
                     </div>
                     <div className="card-buttons">
                         <button onClick={() => props.editPortfolio(portfolio)}><i className="fa-solid fa-pen"></i> Editar </button>
