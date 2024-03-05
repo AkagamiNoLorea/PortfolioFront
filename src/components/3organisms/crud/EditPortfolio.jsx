@@ -65,7 +65,6 @@ const EditPortfolio = () => {
           <h1>Modificar un proyecto</h1>
         </div>
         <div className="formTable">
-          <div>
             <label>Nombre</label>
             <input placeholder="Ingrese el titulo..." type="text" defaultValue={portfolio.nombre} onChange={(e) => setNombre(e.target.value)}/>
           </div>
@@ -81,7 +80,6 @@ const EditPortfolio = () => {
             <label>Lenguajes:</label>
           <input type="text" id="lenguaje" name="lenguaje" value={portfolio.lenguaje || ''} onChange={(e) => setLenguaje(e.target.value)}/>
             </div>
-          </div>
           <div>
             <label>Enlace a GitHub</label>
             <input placeholder="Ingrese url" type="text" defaultValue={portfolio.enlace} onChange={(e) => setEnlace(e.target.value)}/>
@@ -94,7 +92,6 @@ const EditPortfolio = () => {
             <button className='formButton' type="submit"><i className="fa-regular fa-floppy-disk"></i> Guardar canvios</button>
             <button className='formButton' type="button" onClick={goBack}><i className="fa-solid fa-xmark"></i> Cancelar</button>
           </div>
-        </div>
       </form >
     </div>
   );
