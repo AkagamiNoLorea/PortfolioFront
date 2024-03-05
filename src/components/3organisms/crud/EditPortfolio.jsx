@@ -79,7 +79,7 @@ const EditPortfolio = () => {
           </div>
           <div>
             <label>Lenguajes/Frameworks</label>
-            <input placeholder="Ingrese los lenguajes y frameworks usados" type="text" id="lenguaje" name="lenguaje" value={portfolio.lenguaje || ''} onChange={(e) => setLenguaje(e.target.value)}/>
+            <input placeholder="Ingrese los lenguajes y frameworks usados" type="text" id="lenguaje" name="lenguaje" value={portfolio.lenguaje} onChange={(e) => setLenguaje(e.target.value)}/>
             </div>
           <div>
             <label>Enlace a GitHub</label>
