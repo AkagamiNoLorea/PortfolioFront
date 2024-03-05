@@ -26,7 +26,7 @@ const EditPortfolio = () => {
         setNombre(response.data.nombre);
         setDescripcion(response.data.descripcion);
         setImg(response.data.img);
-        setLenguaje(response.data.htmlValue);
+        setLenguaje(response.data.lenguaje);
         setEnlace(response.data.enlace);
         setDespliegue(response.data.despliegue);
       } catch (error) {
