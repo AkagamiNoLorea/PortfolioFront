@@ -9,7 +9,7 @@ const Skills = () => {
     
       <div className='soft-skills'>
         <button className='cvButton'>
-                        <a href='src\assets\CurriculumAidaHerraiz.pdf' download>
+                        <a href='src\assets\CVAidaHerraiz.pdf' download>
                           <span className="button-invisible">Descarga mi curriculum{'\n'}</span>
                           <i className="fa-solid fa-exclamation"></i></a></button>
         <div>
