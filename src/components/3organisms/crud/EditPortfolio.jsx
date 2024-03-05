@@ -11,11 +11,7 @@ const EditPortfolio = () => {
   const [nombre, setNombre] = useState('')
   const [descripcion, setDescripcion] = useState('')
   const [img, setImg] = useState('')
-  const [htmlValue, setHtmlValue] = useState('')
-  const [cssValue, setCssValue] = useState('')
-  const [jsValue, setJsValue] = useState('')
-  const [javaValue, setJavaValue] = useState('')
-  const [frameworksAndLibraries, setFrameworksAndLibraries] = useState('')
+  const [lenguaje, setLenguaje] = useState('')
   const [enlace, setEnlace] = useState('')
   const [despliegue, setDespliegue] = useState('')
   const [error, setError] = useState(null);
@@ -30,11 +26,7 @@ const EditPortfolio = () => {
         setNombre(response.data.nombre);
         setDescripcion(response.data.descripcion);
         setImg(response.data.img);
-        setHtmlValue(response.data.htmlValue);
-        setCssValue(response.data.cssValue);
-        setJsValue(response.data.jsValue);
-        setJavaValue(response.data.javaValue);
-        setFrameworksAndLibraries(response.data.frameworksAndLibraries);
+        setLenguaje(response.data.htmlValue);
         setEnlace(response.data.enlace);
         setDespliegue(response.data.despliegue);
       } catch (error) {
@@ -54,11 +46,7 @@ const EditPortfolio = () => {
       nombre: nombre,
       descripcion: descripcion,
       img: img,
-      htmlValue: htmlValue,
-      cssValue: cssValue,
-      jsValue: jsValue,
-      javaValue: javaValue,
-      frameworksAndLibraries: frameworksAndLibraries,
+      lenguaje: lenguaje,
       enlace: enlace,
       despliegue: despliegue
     })
@@ -90,24 +78,8 @@ const EditPortfolio = () => {
             <input placeholder="Ingrese url de imagen" type="text" value={portfolio.img} onChange={(e) => setImg(e.target.value)} />
           </div>
           <div>
-            <label>Lenguajes</label>
-            <div className='formGrid'>
-              <div className='formGridPart'>
-                <label>HTML</label>
-                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.htmlValue} onChange={(e) => setHtmlValue(e.target.value)} />
-                <label>CSS</label>
-                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.cssValue} onChange={(e) => setCssValue(e.target.value)} />
-              </div>
-              <div className='formGridPart'>
-                <label>Javascript</label>
-                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.jsValue} onChange={(e) => setJsValue(e.target.value)} />
-                <label>Java</label>
-                <input placeholder="Ingrese solo valor numerico" type="text" defaultValue={portfolio.javaValue} onChange={(e) => setJavaValue(e.target.value)} />
-              </div>
-            </div>
-            <div>
-              <label>Frameworks y librerias</label>
-              <input placeholder="Describe tu proyecto..." type="text" defaultValue={portfolio.frameworksAndLibraries} onChange={(e) => setFrameworksAndLibraries(e.target.value)} />
+            <label htmlFor="lenguaje">Lenguajes:</label>
+          <input type="text" id="lenguaje" name="lenguaje" value={portfolio.lenguaje || ''} onChange={(e) => setLenguaje(e.target.value)}/>
             </div>
           </div>
           <div>
