@@ -47,8 +47,8 @@ const SavePortfolio = () => {
                         <input placeholder="Ingrese url de imagen" type="text" value={img} onChange={(e) => setImg(e.target.value)} />
                     </div>
                     <div>
-                        <label>Lenguajes</label>
-                        <input type="text" id="lenguaje" name="lenguaje" value={lenguaje} onChange={(e) => setLenguaje(e.target.value)}/>
+                        <label>Lenguajes/Frameworks</label>
+                        <input placeholder="Ingrese los lenguajes y frameworks usados" type="text" id="lenguaje" name="lenguaje" value={lenguaje} onChange={(e) => setLenguaje(e.target.value)}/>
                     </div>
                     <div>
                         <label>Enlace a GitHub</label>
