@@ -1,5 +1,4 @@
 import './CardPortfolio.css'
-{/*import './CardPortfolio.scss'*/}
 export default function CardPortfolio(props) {
 
     const portfolio = props.portfolio;
