@@ -48,7 +48,7 @@ const SavePortfolio = () => {
                     </div>
                     <div>
                         <label>Lenguajes</label>
-          <input type="text" id="lenguaje" name="lenguaje" value={lenguaje} onChange={(e) => setLenguaje(e.target.value)}/>
+                        <input type="text" id="lenguaje" name="lenguaje" value={lenguaje} onChange={(e) => setLenguaje(e.target.value)}/>
                     </div>
                     <div>
                         <label>Enlace a GitHub</label>
