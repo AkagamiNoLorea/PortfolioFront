@@ -10,11 +10,7 @@ const SavePortfolio = () => {
     const [nombre, setNombre] = useState('')
     const [img, setImg] = useState('')
     const [descripcion, setDescripcion] = useState('')
-    const [htmlValue, setHtmlValue] = useState('')
-    const [cssValue, setCssValue] = useState('')
-    const [jsValue, setJsValue] = useState('')
-    const [javaValue, setJavaValue] = useState('')
-    const [frameworksAndLibraries, setFrameworksAndLibraries] = useState('')
+    const [lenguaje, setLenguaje] = useState('')
     const [enlace, setEnlace] = useState('')
     const [despliegue, setDespliegue] = useState('')
 
@@ -27,8 +23,7 @@ const SavePortfolio = () => {
         e.preventDefault()
         {/*console.log(e)*/}
         await axios.post(url, { nombre: nombre, descripcion: descripcion, img: img, 
-            htmlValue: htmlValue, cssValue: cssValue, jsValue: jsValue, javaValue: javaValue,
-            frameworksAndLibraries:frameworksAndLibraries, enlace: enlace, despliegue: despliegue  })
+            lenguaje: lenguaje, enlace: enlace, despliegue: despliegue  })
         navigate("/")
     }
 
@@ -53,24 +48,7 @@ const SavePortfolio = () => {
                     </div>
                     <div>
                         <label>Lenguajes</label>
-                        <div className='formGrid'>
-                            <div className='formGridPart'>
-                                <label>HTML</label>
-                                <input placeholder="Ingrese solo valor numerico" type="text" value={htmlValue} onChange={(e) => setHtmlValue(e.target.value)} />
-                                <label>CSS</label>
-                                <input placeholder="Ingrese solo valor numerico" type="text" value={cssValue} onChange={(e) => setCssValue(e.target.value)} />
-                            </div>
-                            <div className='formGridPart'>
-                                <label>Javascript</label>
-                                <input placeholder="Ingrese solo valor numerico" type="text" value={jsValue} onChange={(e) => setJsValue(e.target.value)} />
-                                <label>Java</label>
-                                <input placeholder="Ingrese solo valor numerico" type="text" value={javaValue} onChange={(e) => setJavaValue(e.target.value)} />
-                            </div>
-                        </div>
-                        <div>
-                        <label>Frameworks y librerias</label>
-                        <input placeholder="Describe tu proyecto..." type="text" value={frameworksAndLibraries} onChange={(e) => setFrameworksAndLibraries(e.target.value)} />
-                        </div>
+          <input type="text" id="lenguaje" name="lenguaje" value={portfolio.lenguaje || ''} onChange={(e) => setLenguaje(e.target.value)}/>
                     </div>
                     <div>
                         <label>Enlace a GitHub</label>
