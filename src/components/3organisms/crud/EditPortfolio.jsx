@@ -78,7 +78,7 @@ const EditPortfolio = () => {
             <input placeholder="Ingrese url de imagen" type="text" value={portfolio.img} onChange={(e) => setImg(e.target.value)} />
           </div>
           <div>
-            <label htmlFor="lenguaje">Lenguajes:</label>
+            <label>Lenguajes:</label>
           <input type="text" id="lenguaje" name="lenguaje" value={portfolio.lenguaje || ''} onChange={(e) => setLenguaje(e.target.value)}/>
             </div>
           </div>
