@@ -65,6 +65,7 @@ const EditPortfolio = () => {
           <h1>Modificar un proyecto</h1>
         </div>
         <div className="formTable">
+          <div>
             <label>Nombre</label>
             <input placeholder="Ingrese el titulo..." type="text" defaultValue={portfolio.nombre} onChange={(e) => setNombre(e.target.value)}/>
           </div>
@@ -88,6 +89,7 @@ const EditPortfolio = () => {
             <label>Despliegue</label>
             <input placeholder="Ingrese url" type="text" defaultValue={portfolio.despliegue} onChange={(e) => setDespliegue(e.target.value)}/>
           </div>
+        </div>
           <div className='form2Buttons'>
             <button className='formButton' type="submit"><i className="fa-regular fa-floppy-disk"></i> Guardar canvios</button>
             <button className='formButton' type="button" onClick={goBack}><i className="fa-solid fa-xmark"></i> Cancelar</button>
