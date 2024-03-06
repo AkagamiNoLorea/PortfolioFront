@@ -7,8 +7,8 @@
 
 .card-container {
     display: grid;
-    grid-template-rows: 0.7fr 2fr 0.3fr 0.3fr;
-    grid-template-areas: "text" "image" "lenguajes" "urls" "buttons";
+    grid-template-rows: 0.5fr 2fr 0.3fr 0.3fr 0.3fr;
+    grid-template-areas: "text" "image" "lenguaje" "urls" "buttons";
     border-radius: 18px;
     background: linear-gradient(#fff, #dedede);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -21,7 +21,7 @@
     grid-area: text;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin: 2%;
+    margin-top: 2%;
 }
 
 .card-text h2 {
@@ -40,15 +40,17 @@
 }
 .card-image img{
     width: 100%;
+    height: auto;
 }
 
-.card-lenguajes .lenguaje {
+.card-lenguaje {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: justify;
     flex-direction: column;
-    color: white;
+    color: black;
     padding: 10px;
+    font-size: 35px;
 }
 
 .card-urls {
@@ -88,19 +90,6 @@
     background-color: #F27507;
 }
 
-.card-lenguajes {
-    grid-area: lenguajes;
-    align-items: center;
-    margin: 0 2% 0;
-    padding-top: 2%;
-    font-size: 30px;
-    margin-top: 2em;
-    display: flex;
-    overflow: hidden;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-}
 a{
     color: #F27507;
     text-decoration: none;

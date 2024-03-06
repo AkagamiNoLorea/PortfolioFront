@@ -67,27 +67,27 @@ const EditPortfolio = () => {
         <div className="formTable">
           <div>
             <label>Nombre</label>
-            <input placeholder="Ingrese el titulo..." type="text" defaultValue={portfolio.nombre} onChange={(e) => setNombre(e.target.value)}/>
+            <input type="text" defaultValue={portfolio.nombre} onChange={(e) => setNombre(e.target.value)}/>
           </div>
           <div>
             <label>Descripcion</label>
-            <input placeholder="Describe tu proyecto..." type="text" defaultValue={portfolio.descripcion} onChange={(e) => setDescripcion(e.target.value)}/>
+            <input type="text" defaultValue={portfolio.descripcion} onChange={(e) => setDescripcion(e.target.value)}/>
           </div>
           <div>
             <label>Imagen</label>
-            <input placeholder="Ingrese url de imagen" type="text" value={portfolio.img} onChange={(e) => setImg(e.target.value)} />
+            <input type="text" defaultValue={portfolio.img} onChange={(e) => setImg(e.target.value)} />
           </div>
           <div>
             <label>Lenguajes/Frameworks</label>
-            <input placeholder="Ingrese los lenguajes y frameworks usados" type="text" id="lenguaje" name="lenguaje" value={portfolio.lenguaje} onChange={(e) => setLenguaje(e.target.value)}/>
+            <input  type="text" defaultValue={portfolio.lenguaje} onChange={(e) => setLenguaje(e.target.value)}/>
             </div>
           <div>
             <label>Enlace a GitHub</label>
-            <input placeholder="Ingrese url" type="text" defaultValue={portfolio.enlace} onChange={(e) => setEnlace(e.target.value)}/>
+            <input type="text" defaultValue={portfolio.enlace} onChange={(e) => setEnlace(e.target.value)}/>
           </div>
           <div>
             <label>Despliegue</label>
-            <input placeholder="Ingrese url" type="text" defaultValue={portfolio.despliegue} onChange={(e) => setDespliegue(e.target.value)}/>
+            <input type="text" defaultValue={portfolio.despliegue} onChange={(e) => setDespliegue(e.target.value)}/>
           </div>
         </div>
           <div className='form2Buttons'>

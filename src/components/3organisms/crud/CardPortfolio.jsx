@@ -14,12 +14,12 @@ export default function CardPortfolio(props) {
                     <div className="card-image">
                         <img src={portfolio.img} alt="" className="img" />
                     </div>
-                    <div className="card-text">
-                        <p>{portfolio.lenguaje}</p>
+                    <div className="card-lenguaje">
+                        <p><h3>Lenguajes/Frameworks:</h3><br/>{portfolio.lenguaje}</p>
                     </div>
                     <div className="card-urls">
-                        <p> <a href={portfolio.enlace} target='_blank'>Enlace a GitHub</a></p>
-                        <p> <a href={portfolio.despliegue} target='_blank'>Despliegue</a></p>
+                        <p> Enlace a GitHub:<a href={portfolio.enlace} target='_blank'> {portfolio.enlace}</a></p>
+                        <p> Despliegue:<a href={portfolio.despliegue} target='_blank'>{portfolio.despliegue}</a></p>
                     </div>
                     <div className="card-buttons">
                         <button onClick={() => props.editPortfolio(portfolio)}><i className="fa-solid fa-pen"></i> Editar </button>
