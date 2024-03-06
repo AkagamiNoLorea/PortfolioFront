@@ -1,4 +1,4 @@
-import React from 'react'Ñ
+import React from 'react'
 import './Skills.css'
 import CVButton from '../2molecules/CVButton'
 const Skills = () => {
