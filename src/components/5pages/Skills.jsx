@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skills.css'
-import CVAidaHerraiz from 'src\assets\CVAidaHerraiz.pdf'
+import CVAidaHerraiz from '../assets/CVAidaHerraiz.pdf'
 
 const Skills = () => {
   return (
