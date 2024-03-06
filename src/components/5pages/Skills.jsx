@@ -1,6 +1,4 @@
-import React from 'react'
-import graphicsoft from '../../assets/graphicsoft.png'
-import graphichard from '../../assets/graphichard.png'
+import React from 'react'Ñ
 import './Skills.css'
 import CVButton from '../2molecules/CVButton'
 const Skills = () => {
