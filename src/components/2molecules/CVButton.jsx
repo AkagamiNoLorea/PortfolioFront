@@ -1,5 +1,5 @@
 import './CVButton.css'
-import CVAidaHerraiz from '../assets/CVAidaHerraiz.pdf'
+import CVAidaHerraiz from '../../../public/CVAidaHerraiz.pdf'
 
 const CVButton = () => {
   return (
