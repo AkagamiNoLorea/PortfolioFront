@@ -1,16 +1,16 @@
 import React from 'react'
 import './Skills.css'
-/*import CVAidaHerraiz from '../assets/CVAidaHerraiz.pdf'*/
+import CVAidaHerraiz from '../../../public/CVAidaHerraiz.pdf'
 
 const Skills = () => {
   return (
     <>
     
       <div className='soft-skills'>
-        {/*<button className='cvButton'>
+        <button className='cvButton'>
                         <a href={CVAidaHerraiz} download="CVAidaHerraiz" target='_blank'>
                           <span className="button-invisible">Descarga mi curriculum{'\n'}</span>
-  <i className="fa-solid fa-exclamation"></i></a></button>*/}
+  <i className="fa-solid fa-exclamation"></i></a></button>
         <div>
           <h2>Dando lo Mejor de Mí: Un Desarrollador Único</h2>
           <p>
