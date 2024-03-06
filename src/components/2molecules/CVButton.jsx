@@ -1,9 +1,11 @@
 import './CVButton.css'
+import CVAidaHerraiz from 'src\assets\CVAidaHerraiz.pdf'
 
 const CVButton = () => {
   return (
     <>
-    <button className='download-button'><a href='src\assets\CVAidaHerraiz.pdf' download>Descargar mi curriculum</a></button>
+    <a href={CVAidaHerraiz} download="CVAidaHerraiz" target='_blank'>
+   <button className='download-button'>Descargar mi curriculum</button></a>
     </>
   )
 }

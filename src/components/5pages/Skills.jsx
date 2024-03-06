@@ -1,5 +1,6 @@
 import React from 'react'
 import './Skills.css'
+import CVAidaHerraiz from 'src\assets\CVAidaHerraiz.pdf'
 
 const Skills = () => {
   return (
@@ -7,7 +8,7 @@ const Skills = () => {
     
       <div className='soft-skills'>
         <button className='cvButton'>
-                        <a href='src\assets\CVAidaHerraiz.pdf' download>
+                        <a href={CVAidaHerraiz} download="CVAidaHerraiz" target='_blank'>
                           <span className="button-invisible">Descarga mi curriculum{'\n'}</span>
                           <i className="fa-solid fa-exclamation"></i></a></button>
         <div>
