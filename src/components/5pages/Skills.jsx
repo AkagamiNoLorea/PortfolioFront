@@ -23,8 +23,25 @@ const Skills = () => {
           <p>
             Entiendo que cada uno de nosotros tiene su propio estilo de trabajo y enfoque, y es esta diversidad lo que enriquece nuestros equipos y proyectos. Estoy emocionado de compartir mis soft skills, que complementan mi dedicación, para colaborar y crear experiencias web inolvidables.
           </p>
-          <div className='img-graphicsoft'>
-            <img className="graphicsoft" src={graphicsoft} alt="grafico soft skills" />
+          <div className='soft-skills-graphics'>
+          <h1>Soft Skills</h1>
+    <div class="skills-container">
+    <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+      <div class="circular-progress"></div>
+    </div>
           </div>
         </div>
       </div>

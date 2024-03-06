@@ -7,14 +7,13 @@
     justify-content: center;
     padding:2% 4%;
 }
-.soft-skills img{
-    width: 85%;
-    margin-left: 7.5%;
-}
-.soft-skills h2{
+
+.soft-skills h2,h1{
     font-size: 50px;
     text-align: center;
     padding: 2%;
+}
+.soft-skills h2{
     color: #F24607;
 }
 .hard-skills{
@@ -58,7 +57,7 @@
     border: none;
     padding: 10px;
     border-radius: 20px 10px 20px 10px;
-    /* SOMBRA BOTON: darle sommbre al boton "resgistrarse"*/
+    /* SOMBRA BOTON:*/
     -webkit-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
     box-shadow: 4px 9px 8px -4px rgba(0, 0, 0, 0.75);
@@ -75,4 +74,235 @@ display: none;
     display:contents;
     }
     width: 350px;
+}
+.skills-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  
+  .circular-progress {
+    margin-top: 2%;
+    margin-left: 3%;
+    position: relative;
+    background: -webkit-linear-gradient(90deg, #F27507 50%, #f29F05 50%);
+    background: linear-gradient(0deg, #F27507 50%, #f29F05 50%);
+  }
+  
+  .circular-progress,
+  .circular-progress:before,
+  .circular-progress:after {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .circular-progress:before,
+  .circular-progress:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .circular-progress:before {
+    padding: .5em;
+    line-height: 130px;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, .8) content-box;
+    color: #F27507;
+  }
+  
+  .circular-progress:after {
+    background: -webkit-linear-gradient(transparent 50%, rgb(255, 255, 255) 50%);
+    background: linear-gradient(transparent 50%, rgb(255, 255, 255) 50%);
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 230px;
+    color: black;
+  }
+  .circular-progress:nth-child(2),
+  .circular-progress:nth-child(4) {
+    -webkit-transform: rotate(54deg);
+        -ms-transform: rotate(54deg);
+            transform: rotate(54deg);
+  }
+  .circular-progress:nth-child(2):before,
+  .circular-progress:nth-child(4):before {
+    -webkit-transform: rotate(-54deg);
+        -ms-transform: rotate(-54deg);
+            transform: rotate(-54deg);
+    content: "Mejorable";
+  }
+  .circular-progress:nth-child(2):after,
+  .circular-progress:nth-child(4):after {
+    -webkit-transform: rotate(-54deg) scale(1.1);
+        -ms-transform: rotate(-54deg) scale(1.1);
+            transform: rotate(-54deg) scale(1.1);
+  }
+  .circular-progress:nth-child(4),
+  .circular-progress:nth-child(8),
+  .circular-progress:nth-child(11){
+    -webkit-transform: rotate(72deg);
+        -ms-transform: rotate(72deg);
+            transform: rotate(72deg);
+  }
+  .circular-progress:nth-child(4):before,
+  .circular-progress:nth-child(8):before,
+  .circular-progress:nth-child(11):before {
+    -webkit-transform: rotate(-72deg);
+        -ms-transform: rotate(-72deg);
+            transform: rotate(-72deg);
+    content: "Regular";
+  }
+  .circular-progress:nth-child(4):after,
+  .circular-progress:nth-child(8):after,
+  .circular-progress:nth-child(11):after {
+    -webkit-transform: rotate(-72deg) scale(1.1);
+        -ms-transform: rotate(-72deg) scale(1.1);
+            transform: rotate(-72deg) scale(1.1);
+  }
+  .circular-progress:nth-child(10),
+   .circular-progress:nth-child(14) {
+    -webkit-transform: rotate(108deg);
+        -ms-transform: rotate(108deg);
+            transform: rotate(108deg);
+  }
+  
+  .circular-progress:nth-child(10):before,
+  .circular-progress:nth-child(14):before {
+    -webkit-transform: rotate(-108deg);
+        -ms-transform: rotate(-108deg);
+            transform: rotate(-108deg);
+    content: "Aceptable";
+  }
+  
+  .circular-progress:nth-child(10):after,
+  .circular-progress:nth-child(14):after {
+    -webkit-transform: rotate(-108deg) scale(1.1);
+        -ms-transform: rotate(-108deg) scale(1.1);
+            transform: rotate(-108deg) scale(1.1);
+  }
+  .circular-progress:nth-child(5),
+  .circular-progress:nth-child(7),
+  .circular-progress:nth-child(12),
+  .circular-progress:nth-child(13) {
+    -webkit-transform: rotate(126deg);
+        -ms-transform: rotate(126deg);
+            transform: rotate(126deg);
+  }
+  
+  .circular-progress:nth-child(5):before,
+  .circular-progress:nth-child(7):before,
+  .circular-progress:nth-child(12):before,
+  .circular-progress:nth-child(13):before {
+    -webkit-transform: rotate(-126deg);
+        -ms-transform: rotate(-126deg);
+            transform: rotate(-126deg);
+    content: "Competente";
+  }
+  
+  .circular-progress:nth-child(5):after,
+  .circular-progress:nth-child(7):after,
+  .circular-progress:nth-child(12):after,
+  .circular-progress:nth-child(13):after {
+    -webkit-transform: rotate(-126deg) scale(1.1);
+        -ms-transform: rotate(-126deg) scale(1.1);
+            transform: rotate(-126deg) scale(1.1);
+  }
+
+  .circular-progress:nth-child(3),
+  .circular-progress:nth-child(6),
+  .circular-progress:nth-child(9),
+  .circular-progress:nth-child(15) {
+        -ms-transform: rotate(144deg);
+            transform: rotate(144deg);
+  } 
+  .circular-progress:nth-child(3):before,
+  .circular-progress:nth-child(6):before,
+  .circular-progress:nth-child(9):before,
+   .circular-progress:nth-child(15):before{
+    -webkit-transform: rotate(-144deg);
+        -ms-transform: rotate(-144deg);
+            transform: rotate(-144deg);
+    content: "Notable";
+  }
+  .circular-progress:nth-child(3):after,
+  .circular-progress:nth-child(6):after,
+  .circular-progress:nth-child(9):after,
+  .circular-progress:nth-child(15):after{
+    -webkit-transform: rotate(-144deg) scale(1.1);
+        -ms-transform: rotate(-144deg) scale(1.1);
+            transform: rotate(-144deg) scale(1.1);
+  }
+  .circular-progress:nth-child(1){
+    -webkit-transform: rotate(162deg);
+        -ms-transform: rotate(162deg);
+            transform: rotate(162deg);
+  } 
+  .circular-progress:nth-child(1):before  {
+    -webkit-transform: rotate(-162deg);
+        -ms-transform: rotate(-162deg);
+            transform: rotate(-162deg);
+    content: "Excelente";
+  }
+  
+  .circular-progress:nth-child(1):after{
+    -webkit-transform: rotate(-162deg) scale(1.1);
+        -ms-transform: rotate(-162deg) scale(1.1);
+            transform: rotate(-162deg) scale(1.1);
+  }
+  .circular-progress:nth-child(1):after {
+    content: "motivación";
+}
+.circular-progress:nth-child(2):after {
+    content: "gestión del estrés";
+}
+.circular-progress:nth-child(3):after {
+    content: "ética y responsabilidad";
+}
+.circular-progress:nth-child(4):after {
+    content: "solución de problemas";
+}
+.circular-progress:nth-child(5):after {
+    content: "empatía";
+}
+.circular-progress:nth-child(6):after{
+    content: "enfoque en el usuario";
+}
+.circular-progress:nth-child(7):after{
+    content: "autodidacta";
+}
+.circular-progress:nth-child(8):after{
+    content: "gestión del tiempo";
+}
+.circular-progress:nth-child(9):after{
+    content: "creatividad y diseño";
+}
+.circular-progress:nth-child(10):after{
+    content: "atención al detalle";
+}
+.circular-progress:nth-child(11):after{
+    content: "pensamineto analítico";
+}
+.circular-progress:nth-child(12):after{
+    content: "adaptabilidad";
+}
+.circular-progress:nth-child(13):after{
+    content: "trabajo en equipo";
+}
+.circular-progress:nth-child(14):after{
+    content: "comunicación clara";
+}
+.circular-progress:nth-child(15):after{
+    content: "perseverancia";
 }
