@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skills.css'
-import CVButton from '../2molecules/CVButton'
+
 const Skills = () => {
   return (
     <>
