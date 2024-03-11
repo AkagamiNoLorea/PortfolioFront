@@ -21,10 +21,10 @@ export default function CardPortfolio(props) {
                         <p> Enlace a GitHub:<a href={portfolio.enlace} target='_blank'> {portfolio.enlace}</a></p>
                         <p> Despliegue:<a href={portfolio.despliegue} target='_blank'>{portfolio.despliegue}</a></p>
                     </div>
-                    <div className="card-buttons">
+                    {/*<div className="card-buttons">
                         <button onClick={() => props.editPortfolio(portfolio)}><i className="fa-solid fa-pen"></i> Editar </button>
                         <button onClick={() => props.deletePortfolio(portfolio)}><i className="fa-solid fa-xmark"></i> Eliminar </button>
-                    </div>
+    </div>*/}
                 </div>
             </div>
         </>
